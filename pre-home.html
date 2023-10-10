@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        position: relative;
+        width: 1250px;
+        height: 550px;
+        border: 2px solid #0ef;
+        overflow: hidden;
+      }
+      .bg-anymate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 600px;
+        width: 850px;
+        background: linear-gradient(45deg, #081b29, #0ef);
+        border-bottom: 3px solid #0ef;
+        /* transform: rotate(0) skewY(0); */
+        transform: rotate(10deg) skewY(40deg);
+        transform-origin: bottom right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg-anymate"></div>
+      <nav>
+        <div class="anymate"></div>
+      </nav>
+    </div>
+  </body>
+</html>

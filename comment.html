@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <style>
+      .container {
+        border: none;
+        width: 450px;
+        height: 600px;
+        border-radius: 15px;
+        overflow-y: auto;
+      }
+      .chat-area {
+        overflow: auto;
+      }
+
+      .comm .sadick {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+      .sidechick {
+        margin-top: -1px;
+      }
+      .open {
+        border: none;
+        padding: 7px 25px;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 10px;
+        height: 40px;
+        border-radius: 35px 35px 0 0;
+      }
+      .open:hover {
+        background-color: #333;
+      }
+      .box {
+        background-color: #333;
+        width: 300px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px 0 15px 0;
+        display: none;
+      }
+      .box:hover {
+        background: #0ef;
+      }
+      .close {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .close-b {
+        border: none;
+        background: none;
+        color: orangered;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .close-b:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap-desh">
+        <section class="chat-area">
+          <div class="comment">
+            <img src="maxresdefault (1).jpg" alt="" />
+            <div class="comm">
+              <span>hdhredgshzdfds</span>
+              <!-- <span>reply</span> -->
+              <div class="sadick">
+                <div class="side">
+                  <i class="bx bxs-like bale"></i>
+                  <i class="bx bxs-dislike bale"></i>
+                </div>
+                <div class="sidechick">
+                  <button class="open" id="opne" onclick="open_box()">
+                    Reply
+                  </button>
+                  <div class="box" id="box">
+                    <span class="close">
+                      <button class="close-b" onclick="close_box()">x</button>
+                      <!-- <h2>subscribe</h2> -->
+                    </span>
+                    <textarea
+                      style="
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      var openb = document.getElementById("open");
+      var box = document.getElementById("box");
+      function open_box() {
+        box.style.display = "block";
+        openb.style.display = "none";
+      }
+      function close_box() {
+        box.style.display = "none";
+        openb.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
